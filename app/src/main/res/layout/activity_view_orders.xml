@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/reviewOrderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reviewOrder"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tripFromTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/indent"
+        android:text="@string/tripFrom"
+        tools:layout_marginTop="@dimen/betweenLines" />
+
+    <TextView
+        android:id="@+id/tripToTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/indent"
+        android:text="@string/tripTo"
+        tools:layout_marginTop="@dimen/betweenLines" />
+
+    <TextView
+        android:id="@+id/tripTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/indent"
+        android:text="@string/tripType"
+        tools:layout_marginTop="@dimen/betweenLines" />
+
+    <TextView
+        android:id="@+id/prioritiesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/indent"
+        android:text="@string/priorities"
+        tools:layout_marginTop="@dimen/betweenLines" />
+
+    <TextView
+        android:id="@+id/reviewPaymentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:text="@string/reviewPayment"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cardNumberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/indent"
+        android:text="@string/cardNumber"
+        tools:layout_marginTop="@dimen/betweenLines" />
+
+    <TextView
+        android:id="@+id/nameOnCardTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/indent"
+        android:text="@string/nameOnCard"
+        tools:layout_marginTop="@dimen/betweenLines" />
+
+    <TextView
+        android:id="@+id/finalReviewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:text="@string/finalReview"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/editTicketButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/editTicket" />
+
+        <Button
+            android:id="@+id/editCardButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/editCard" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/purchaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/purchase" />
+</LinearLayout>

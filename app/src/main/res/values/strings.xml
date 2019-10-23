@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">A7</string>
+    <string name="actionBar">Train Tickets</string>
+    <string name="totalTicket">Total Train Tickets sold today: </string>
+    <string name="totalTicketNumber">0</string>
+    <string name="startlocation">Start Location: </string>
+    <string name="endLocation">End Location: </string>
+    <string-array name="locationsArray">
+        <item>Los Angeles</item>
+        <item>San Jose</item>
+        <item>Santa Babara</item>
+        <item>Santa Clarita</item>
+        <item>USC</item>
+    </string-array>
+    <string name="ticketkind">What kind of ticket? </string>
+    <string name="prioritykind">Do you have priority? </string>
+    <string name="oneWay">One Way</string>
+    <string name="roundTrip">Round Trip</string>
+    <string name="dayPass">Day Pass</string>
+    <string name="no">No</string>
+    <string name="disabled">Disabled</string>
+    <string name="pregnant">Pregnant</string>
+    <string name="elderly">Elderly</string>
+    <string name="veteran">Veteran</string>
+    <string name="useCard">Use Card</string>
+    <string name="verify">Verify</string>
+    <string name="tripFrom">Trip from:\t\t\t\t%s</string>
+    <string name="tripTo">Trip to:\t\t\t\t\t\t\t%s</string>
+    <string name="tripType">Trip Type:\t\t\t\t%s</string>
+    <string name="priorities">Priorities:\t\t\t\t\t%s</string>
+    <string name="reviewOrder">Please review your order:</string>
+    <string name="reviewPayment">Please review your payment info:</string>
+    <string name="cardNumber">Card Number:\t%d</string>
+    <string name="nameOnCard">Name on card:%s</string>
+    <string name="finalReview">Does everything look right?</string>
+    <string name="editTicket">Edit Ticket</string>
+    <string name="editCard">Edit Card</string>
+    <string name="purchase">Purchase</string>
+    <string name="enterCard">Enter your card information</string>
+    <string name="saveCard">Save Card</string>
+    <string name="sampleNumber">12345678</string>
+    <string name="sampleName">Buzz Lightyear</string>
+    <string name="cardCardNumber">Card Number:</string>
+    <string name="cardNameOnCard">Name on card:</string>
+
+
+</resources>
