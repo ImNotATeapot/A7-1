@@ -19,32 +19,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/indent"
-        android:text="@string/tripFrom"
-        tools:layout_marginTop="@dimen/betweenLines" />
+        android:layout_marginTop="@dimen/betweenLines"
+        android:text="@string/tripFrom" />
 
     <TextView
         android:id="@+id/tripToTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/indent"
-        android:text="@string/tripTo"
-        tools:layout_marginTop="@dimen/betweenLines" />
+        android:layout_marginTop="@dimen/betweenLines"
+        android:text="@string/tripTo" />
 
     <TextView
         android:id="@+id/tripTypeTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/indent"
-        android:text="@string/tripType"
-        tools:layout_marginTop="@dimen/betweenLines" />
+        android:layout_marginTop="@dimen/betweenLines"
+        android:text="@string/tripType" />
 
     <TextView
         android:id="@+id/prioritiesTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/indent"
+        android:layout_marginTop="@dimen/betweenLines"
         android:text="@string/priorities"
-        tools:layout_marginTop="@dimen/betweenLines" />
+        tools:layout_marginTop="between" />
 
     <TextView
         android:id="@+id/reviewPaymentTextView"
@@ -60,16 +61,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/indent"
-        android:text="@string/cardNumber"
-        tools:layout_marginTop="@dimen/betweenLines" />
+        android:layout_marginTop="@dimen/betweenLines"
+        android:text="@string/cardNumber" />
 
     <TextView
         android:id="@+id/nameOnCardTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/indent"
-        android:text="@string/nameOnCard"
-        tools:layout_marginTop="@dimen/betweenLines" />
+        android:layout_marginTop="@dimen/betweenLines"
+        android:text="@string/nameOnCard" />
 
     <TextView
         android:id="@+id/finalReviewTextView"

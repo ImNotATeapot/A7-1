@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private Button useCardButton;
     private Button verifyButton;
 
-    private Card card;
+    private Card card = null;
     private Integer totalTicketsSold = 0;
     private int selectedTrip = 0;
     private int selectedPriority = 0;
@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Log.d(TAG, String.format("Activity returned intent %d and result $d", requestCode, resultCode));
         card = data.getSerializableExtra(CARD_EXTRA) == null ? null : (Card) data.getSerializableExtra(CARD_EXTRA);
+
         if (requestCode == ORDER_INTENT_REQUEST_CODE) {
             switch (resultCode) {
                 case (RESULT_OK):
@@ -141,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
                     selectedTrip = ticketTypeGroup.getCheckedRadioButtonId();
                     selectedPriority = priorityGroup.getCheckedRadioButtonId();
                     Intent cardIntent = new Intent(getApplicationContext(), CardActivity.class);
+                    cardIntent.putExtra(CARD_EXTRA, card);
                     startActivityForResult(cardIntent, CARD_INTENT_REQUEST_CODE);
                     break;
                 case R.id.verifyButton:

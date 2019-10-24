@@ -25,13 +25,19 @@ public class CardActivity extends AppCompatActivity {
         nameOnCard = findViewById(R.id.nameOnCardEditText);
         saveCard = findViewById(R.id.saveCardButton);
         saveCard.setOnClickListener(new Listener());
+
+        if (getIntent().getSerializableExtra(MainActivity.CARD_EXTRA) != null) {
+            Card card = (Card) getIntent().getSerializableExtra(MainActivity.CARD_EXTRA);
+            cardNumber.setText(""+card.getNumber());
+            nameOnCard.setText(card.getName());
+        }
    }
 
    private class Listener implements View.OnClickListener {
        @Override
        public void onClick(View v) {
            Log.d(TAG, cardNumber.getText().toString() + nameOnCard.getText().toString());
-           Card card = new Card(Integer.parseInt(cardNumber.getText().toString()), nameOnCard.getText().toString(), -1);
+           Card card = new Card(Long.parseLong(cardNumber.getText().toString()), nameOnCard.getText().toString(), -1);
            getIntent().putExtra(MainActivity.CARD_EXTRA, card);
            setResult(RESULT_OK, getIntent());
            finish();

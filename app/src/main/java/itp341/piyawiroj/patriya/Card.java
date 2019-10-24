@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class Card implements Serializable {
 
-    private int number;
+    private long number;
     private String name;
     private int securityCode;
 
-    public Card(int number, String name, int securityCode) {
+    public Card(long number, String name, int securityCode) {
         this.number = number;
         this.name = name;
         this.securityCode = securityCode;
@@ -23,11 +23,11 @@ public class Card implements Serializable {
                 '}';
     }
 
-    public int getNumber() {
+    public long getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(long number) {
         this.number = number;
     }
 
